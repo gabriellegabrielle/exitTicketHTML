@@ -1,41 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My first Website</title>
-  </head>
-  <body>
-      <h1>Block Elements </h1>
-      <h4>Frasier Characters</h4>
-    
-      <ul>
-          <li>Fraiser Crane</li>
-          <li>Niles Crane</li>
-          <li>Roz Doyle</li>
-          <li>Daphne Moon</li>
-          <li>Martin Crane</li>
-      </ul>
-      
-      <h3>Best Guest Characters on Fraiser</h3>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intro CSS</title>
+  <link rel="stylesheet" href="./css/main.css"
+</head>
+<body>
+  <h1>Intro CSS</h1>
 
-      <ol>
-          <li>Dr. Mary</li>
-          <li>Lana Gardner</li>
-          <li>Bob Bulldog Briscoe</li>
-          <li>Ronee Lawrence</li>
-          <li>Maris Crane</li>
-      </ol>
 
-      <h1>Inline Elements</h1>
+  <h3>Basics</h3>
 
-      <!-- self closing tag -->
-      <!-- src is attribute -->
-      <img src="./img/fraisercast.jpg" alt="fraisercast">
-      <img src="./img/Bebe.jpg" alt="Bebe" width="200px">
-      
+  <h4>Inline Styles</h4>
 
-  </body>
+  <i>You have in-line styles by adding a style attribute to each element to apply a style to it.</i>
+
+  <br>
+  <br>
+  <br>
+  <p>Ex. I want the following text to be in red: <span style="color: red;">See I am red with inline styles</span></p>
+
+  <h4>External stylesheet</h4>
+
+  <i>An external stylesheet is connected to the HTML with a link tag in the head element</i>
+
+  <br>
+  <br>
+  <br>
+  <p>Ex. I want the following text to be in red: <label>See I am red with inline styles</label></p>
+
+
+  <h3>Core CSS Concepts</h3>
+
+
+<span>
+  <span>Selectors</span>
+
+  <h3>ID Selectors</h3>
+
+  <p>Ex. Instead of using a label element tag I am going to use an id <span id="changeTextToBlue">See I am blue</span></p>
+
+  <h3>Class Selector</h3>
+
+  <p Class="changeToGreen">I</p>
+  <p Class="changeToGreen">want</p>
+  <p Class="changeToGreen">all</p>
+  <p Class="changeToGreen">of these p tags to have the same style</p>
+
+  <h3>Combining selectors</h3>
+
+  <div>
+    This is a div that contains a span that I want to edit
+  <span>I am the span</span>
+</div>
+
+<h4>element + id</h4>
+<div>
+  this div has another div with a specific
+  id I want to edit
+  <div id="editMe">i am div with id</div>
+</div>
+
+<h4>class id</h4>
+
+<div class="someClass">
+  someClass
+  <div id="someID">I am SomeID</div>
+</div>
+
+<div class="someClass">
+  someClass
+  <div id="someID" class="someOtherClass">I am someID with someClass</div>
+</div>
+
+</span>
+</body> 
 </html>
-
-
